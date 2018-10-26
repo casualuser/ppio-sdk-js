@@ -1,0 +1,28 @@
+{
+  "QosServerConfig": {
+    "Addr": "http://ad416ba1c124611e9a39d06111ae4d23-1840383830.us-west-2.elb.amazonaws.com:80"
+  },
+  "Bootstrap": [
+    {
+      "IP": "35.160.24.147",
+      "UDPPort": 8020,
+      "TCPPort": 8020,
+      "HTTPPort": 0,
+      "RPCPort": 0
+    },
+    {
+      "IP": "47.110.88.167",
+      "UDPPort": 8020,
+      "TCPPort": 8020,
+      "HTTPPort": 0,
+      "RPCPort": 0
+    }
+  ],
+  "Payment": {
+    "IP": "ad04b30b910c311e9b71c02d26ce9aff-567092461.us-west-2.elb.amazonaws.com",
+    "UDPPort": 0,
+    "TCPPort": 0,
+    "HTTPPort": 18030,
+    "RPCPort": 0
+  }
+}

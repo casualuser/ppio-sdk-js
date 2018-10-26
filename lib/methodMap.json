@@ -1,0 +1,95 @@
+{
+  "APIVersion": [],
+  "StopDaemon": [],
+  "CreateBucket": [{ "name": "bucket", "required": true }],
+  "DeleteBucket": [{ "name": "bucket", "required": true }],
+  "ListBuckets": [],
+  "HeadBucket": [{ "name": "bucket", "required": true }],
+  "GetJobProgress": [{ "name": "task", "required": true }],
+  "PutObject": [
+    { "name": "bucket", "required": true },
+    { "name": "key", "required": true },
+    { "name": "body", "required": false },
+    { "name": "metadata", "required": false },
+    { "name": "chiprice", "required": false },
+    { "name": "copies", "required": false },
+    { "name": "expires", "required": false },
+    { "name": "encrypt", "required": true, "default": true }
+  ],
+  "GetObject": [
+    { "name": "bucket", "required": false },
+    { "name": "key", "required": false },
+    { "name": "sharecode", "required": false },
+    { "name": "outfile", "required": true },
+    { "name": "chiprice", "required": false }
+  ],
+  "HeadObject": [
+    { "name": "bucket", "required": true },
+    { "name": "key", "required": true }
+  ],
+  "DeleteObject": [
+    { "name": "bucket", "required": true },
+    { "name": "key", "required": true }
+  ],
+  "RenewObject": [
+    { "name": "bucket", "required": true },
+    { "name": "key", "required": true },
+    { "name": "chiprice", "required": false },
+    { "name": "copies", "required": false },
+    { "name": "expires", "required": true }
+  ],
+  "ShareObject": [
+    { "name": "bucket", "required": true },
+    { "name": "key", "required": true }
+  ],
+  "CopyObject": [
+    { "name": "bucket", "required": true },
+    { "name": "key", "required": true },
+    { "name": "source", "required": true },
+    { "name": "metadata", "required": false },
+    { "name": "chiprice", "required": false },
+    { "name": "copies", "required": false },
+    { "name": "expires", "required": false },
+    { "name": "encrypt", "required": true, "default": true }
+  ],
+  "ObjectStatus": [
+    { "name": "bucket", "required": true },
+    { "name": "key", "required": true }
+  ],
+  "ObjectStatusSync": [
+    { "name": "bucket", "required": true },
+    { "name": "key", "required": true }
+  ],
+  "ListObjects": [{ "name": "bucket", "required": true }],
+  "MoveObject": [
+    { "name": "bucket", "required": true },
+    { "name": "key", "required": true },
+    { "name": "source", "required": true }
+  ],
+  "PutObjectFunds": [
+    { "name": "objectsize", "required": true },
+    { "name": "copies", "required": true },
+    { "name": "expires", "required": true }
+  ],
+  "GetObjectFunds": [
+    { "name": "objectsize", "required": true }
+  ],
+  "DeleteObjectRefunds": [
+    { "name": "bucket", "required": true },
+    { "name": "key", "required": true }
+  ],
+  "ListTasks": [],
+  "PauseTask": [{ "name": "taskid", "required": true }],
+  "ResumeTask": [{ "name": "taskid", "required": true }],
+  "DeleteTask": [{ "name": "taskid", "required": true }],
+  "DeleteTaskSync": [{ "name": "taskid", "required": true }],
+  "PushIndexData": [],
+  "PullIndexData": [],
+  "ImportRootHash": [],
+  "ImportIndexdata": [],
+  "ExportIndexdata": [],
+  "NetID": [],
+  "NetPeers": [],
+  "NetServers": [],
+  "WalletAccount": []
+}
