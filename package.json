@@ -1,16 +1,22 @@
 {
-  "name": "poss-sdk",
-  "version": "0.0.1-alpha.64",
-  "description": "the PPIO node.js sdk",
-  "author": "PPLabs",
+  "name": "poss.js",
+  "version": "0.1.0",
+  "description": "The PPIO Node.js sdk",
+  "author": {
+    "name": "jasonhp",
+    "email": "saiki@pplabs.org"
+  },
   "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/PPIO/ppio-sdk-js"
   },
+  "homepage": "https://github.com/PPIO/ppio-sdk-js/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/PPIO/ppio-sdk-js/issues"
+  },
   "scripts": {
-    "test": "jest",
     "lint": "eslint --fix ."
   },
   "files": [
