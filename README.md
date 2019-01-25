@@ -169,6 +169,7 @@ Complete configuration can be found in [PPIO CLI Reference](https://www.pp.io/do
 
 ::: warning NOTE:
 The `ppioExecutablePath` parameter must be provided when creating the instance.
+`testnet` will be set to `"test"` by default unless you set `isMainnet` to true, for we are currently running on testnet.
 :::
 
 ### Stopping the daemon
